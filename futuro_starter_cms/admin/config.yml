@@ -1,0 +1,50 @@
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - file: "assets/settings.json"
+        label: "Global Settings"
+        name: "globals"
+        fields:
+          - {label: "Hero Headline", name: "hero_headline", widget: "string"}
+          - {label: "Hero Subheadline", name: "hero_sub", widget: "text"}
+          - {label: "Apply URL (Kajabi)", name: "apply_url", widget: "string"}
+          - {label: "Primary CTA Label", name: "cta_primary", widget: "string", default: "Explore the Projects"}
+  - name: "projects"
+    label: "Alumni Projects"
+    label_singular: "Project"
+    folder: "assets/projects"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Founder", name: "founder", widget: "string"}
+      - {label: "Country", name: "country", widget: "string"}
+      - {label: "Cohort", name: "cohort", widget: "string"}
+      - {label: "Issue", name: "issue", widget: "select", options: ["Education","Migration","Health","Climate","Governance"]}
+      - {label: "Summary", name: "summary", widget: "text"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Project URL", name: "url", widget: "string", required: false}
+      - {label: "Tags", name: "tags", widget: "list", field: {label: "Tag", name: "tag", widget: "string"}}
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "index.html"
+        label: "Homepage (HTML)"
+        name: "home"
+        editor:
+          preview: false
+        fields:
+          - {label: "Raw HTML", name: "body", widget: "code", default: "", hint: "Advanced: edit the HTML directly if needed."}
+
