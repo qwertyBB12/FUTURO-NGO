@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Proyecto Raíces",
+    "founder": "Isabel Jiménez",
+    "country": "Mexico",
+    "cohort": "2024",
+    "issue": "Education",
+    "summary": "Preserving indigenous wisdom through oral history and digital archives in Oaxaca.",
+    "image": "https://picsum.photos/seed/raices/600/400",
+    "url": "#",
+    "tags": [
+      "IndigenousRights",
+      "Education",
+      "Mexico"
+    ]
+  },
+  {
+    "title": "Puentes de Frontera",
+    "founder": "Luis Cabrera",
+    "country": "United States",
+    "cohort": "2023",
+    "issue": "Migration",
+    "summary": "Legal navigation and storytelling clinics for mixed-status families along the U.S.-Mexico border.",
+    "image": "https://picsum.photos/seed/puentes/600/400",
+    "url": "#",
+    "tags": [
+      "Migration",
+      "Civic",
+      "USMexicoBorder"
+    ]
+  },
+  {
+    "title": "Salud al Sur",
+    "founder": "Ana María Torres",
+    "country": "Colombia",
+    "cohort": "2022",
+    "issue": "Health",
+    "summary": "Community-based telehealth and maternal care access for rural women in the Colombian Pacific.",
+    "image": "https://picsum.photos/seed/salud/600/400",
+    "url": "#",
+    "tags": [
+      "Health",
+      "Telemedicine",
+      "Colombia"
+    ]
+  }
+]
